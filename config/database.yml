@@ -1,11 +1,11 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  database: RailsMySQL
-  username: root
-  password: root
-  host: <%= ENV['DB_HOST'] %>
   timeout: 5000
+  username: <%= ENV['MYSQL_USERNAME'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
+  database: <%= ENV['MYSQL_DATABASE'] %>
+  host: <%= ENV['MYSQL_ADDRESS'] %>    
 
 development:
   <<: *default
