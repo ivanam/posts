@@ -1,20 +1,31 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  timeout: 5000
-  username: <%= ENV['MYSQL_USERNAME'] %>
-  password: <%= ENV['MYSQL_PASSWORD'] %>
-  database: <%= ENV['MYSQL_DATABASE'] %>
-  host: <%= ENV['MYSQL_ADDRESS'] %>    
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  host: 127.0.0.1
+  username: root
+  #password: finan2
+  password: root
+
+
 
 development:
   <<: *default
+  database: ergos
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  database: ergos
 
 production:
   <<: *default
+  host: 127.0.0.1
+  database: ergos
+  username: root
+  password: root
+
