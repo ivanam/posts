@@ -1,14 +1,14 @@
 {
   "platform": "ubuntu",
   "platform_version": "bionic",
-  "set_fqdn": "myserver.com",
+  "set_fqdn": "192.168.1.204",
   "ark": {
     "prefix_root": "/usr/local/src"
   },
   "rvm": {
     "default_ruby": "ruby-2.6.0",
     "rubies": ["ruby-2.6.0p0"],
-    "group_users": ["worstation2","root"],
+    "group_users": ["develop","worstation2","root"],
     "global_gems": [
       { "name": "passenger"},
       { "name": "rails", "version": "5.0.7" }  

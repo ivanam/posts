@@ -1,0 +1,17 @@
+{
+  "id": "mysql",
+  "user_1": {
+    "encrypted_data": "HzDmIpD/nwcJeJjJTSHWSUd91f17ug==\n",
+    "iv": "BlAxyBD1UsiKIJkJ\n",
+    "auth_tag": "FlGbM/3GUwGSLgXPcw8O4A==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "user_2": {
+    "encrypted_data": "0mJkLxasX2tXoscScqJdf5g61iTNQg==\n",
+    "iv": "SAMvGFJgqGMwAU0e\n",
+    "auth_tag": "1YcaFV9lGZu8SeGfrEoxcQ==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}
