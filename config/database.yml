@@ -26,6 +26,6 @@ production:
   <<: *default
   host: 127.0.0.1
   database: posts
-  username: deploy
-  password: 12345678
+  username: root
+  password: new-password
 
