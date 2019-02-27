@@ -64,5 +64,5 @@ set :stage, :production
 set :branch, "master"
 set :deploy_to, '/var/www/posts'
 
-server '192.168.1.204', user: 'deploy', roles: %w{app db web}
+server '192.168.43.204', user: 'deploy', roles: %w{app db web}
 # Extended Server Syntax
