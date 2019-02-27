@@ -1,10 +1,13 @@
-Generated at 2019-02-27 20:02:15 -0300
-Net::HTTPServerException: 412 "Precondition Failed"
-/opt/chef/embedded/lib/ruby/2.5.0/net/http/response.rb:122:in `error!'
-/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/http.rb:152:in `request'
-/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/http.rb:131:in `post'
-/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/policy_builder/expand_node_object.rb:177:in `sync_cookbooks'
-/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/policy_builder/expand_node_object.rb:83:in `setup_run_context'
+Generated at 2019-02-27 20:12:29 -0300
+Chef::Exceptions::RecipeNotFound: could not find recipe default for cookbook mysql
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/cookbook_version.rb:188:in `load_recipe'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/run_context.rb:350:in `load_recipe'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/run_context/cookbook_compiler.rb:166:in `block in compile_recipes'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/run_context/cookbook_compiler.rb:163:in `each'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/run_context/cookbook_compiler.rb:163:in `compile_recipes'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/run_context/cookbook_compiler.rb:79:in `compile'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/run_context.rb:199:in `load'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/policy_builder/expand_node_object.rb:97:in `setup_run_context'
 /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/client.rb:515:in `setup_run_context'
 /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/client.rb:281:in `run'
 /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/application.rb:303:in `run_with_graceful_exit_option'
